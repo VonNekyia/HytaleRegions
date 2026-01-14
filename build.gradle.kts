@@ -15,8 +15,8 @@ repositories {
 
 dependencies {
     // Hytale Server API (provided by server at runtime)
-    compileOnly(files("libs/hytale-server.jar"))
-    
+    compileOnly(files("libs/HytaleServer.jar"))
+
     // Common dependencies (will be bundled in JAR)
     implementation("com.google.code.gson:gson:2.10.1")
     implementation("org.jetbrains:annotations:24.1.0")
@@ -24,6 +24,9 @@ dependencies {
     // Test dependencies
     testImplementation("org.junit.jupiter:junit-jupiter:5.10.0")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
+    // Internal dependencies
+    implementation("org.yaml:snakeyaml:2.2")
 }
 
 // Configure server testing
