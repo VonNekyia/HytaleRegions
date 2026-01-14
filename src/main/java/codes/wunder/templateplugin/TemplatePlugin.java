@@ -1,4 +1,4 @@
-package com.example.templateplugin;
+package codes.wunder.templateplugin;
 
 /**
  * Main plugin class.
